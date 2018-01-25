@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {hero} from '../hero';
 import {student} from '../student';
+import { HEROES } from '../mock-heroes';
 @Component({
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
@@ -12,6 +13,9 @@ export class HeroesComponent implements OnInit {
 
   ngOnInit() {
   }
+  
+  heroes=HEROES;
+  
 hero: Hero{
 id:1;
 name:"Sami";
@@ -19,4 +23,9 @@ name:"Sami";
 student:Student{id:1000;
 name:"Reza";
 email:"springapidev@gmail.com"};
+
+
+
 }
+
+
