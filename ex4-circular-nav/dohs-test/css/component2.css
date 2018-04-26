@@ -5,6 +5,7 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	background:blue;
 }
 
 html,
@@ -238,14 +239,27 @@ body {
 	-ms-transform: rotate(172deg) skew(60deg);
 	transform: rotate(172deg) skew(60deg);
 }
+.csstransforms .opened-nav li:nth-child(8) {
+	-webkit-transform: rotate(204deg) skew(60deg);
+	-moz-transform: rotate(204deg) skew(60deg);
+	-ms-transform: rotate(204deg) skew(60deg);
+	transform: rotate(204deg) skew(60deg);
+}
 
+
+.csstransforms .opened-nav li:nth-child(9) {
+	-webkit-transform: rotate(308deg) skew(60deg);
+	-moz-transform: rotate(308deg) skew(60deg);
+	-ms-transform: rotate(308deg) skew(60deg);
+	transform: rotate(308deg) skew(60deg);
+}
 .no-csstransforms .cn-wrapper {
 	overflow: hidden;
 	margin: 10em auto;
 	padding: .5em;
 	text-align: center;
 }
-
+li{background:#fff!important;}
 .no-csstransforms .cn-wrapper ul {
 	display: inline-block;
 }

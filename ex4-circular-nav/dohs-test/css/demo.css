@@ -16,6 +16,7 @@ body {
 
 a, button {
 	outline: none;
+	cursor:pointer;
 }
 
 a {
@@ -110,28 +111,18 @@ a {
 	border: 3px solid #fff;
 	color: #fff;
 	font-weight: 700;
-}
 
+}
+a{
+		corsor:pointer;
+}
 .codrops-demos a:hover,
 .codrops-demos a.current-demo,
 .codrops-demos a.current-demo:hover {
 	opacity: 0.6;
+	
 }
 
-.container > section {
-	padding: 2em;
-	font-size: 1.4em;
-	max-width: 50em;
-	margin: 0 auto;
-}
-
-.container > section p {
-	padding: 0.8em 0;
-	text-align: justify;
-	opacity: 0.5;
-	font-weight: 300;
-	line-height: 1.4;
-}
 
 @media screen and (max-width: 25em) {
 
