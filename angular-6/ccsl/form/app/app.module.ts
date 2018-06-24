@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -11,6 +12,11 @@ import { LoginComponent } from './login/login.component';
 import { Login2Component } from './login2/login2.component';
 import { Login3Component } from './login3/login3.component';
 import { LoginValidComponent } from './login-valid/login-valid.component';
+import { AnimationsexComponent } from './animationsex/animationsex.component';
+
+import { MyserviceService } from './myservice.service';
+import { ServiceDateExComponent } from './service-date-ex/service-date-ex.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,16 +25,19 @@ import { LoginValidComponent } from './login-valid/login-valid.component';
 	LoginComponent,
 	Login2Component,
 	Login3Component,
-	LoginValidComponent
+	LoginValidComponent,
+	AnimationsexComponent,
+	ServiceDateExComponent
   ],
   imports: [
     BrowserModule,
 	FormsModule,
 	HttpModule,
 	ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+	BrowserAnimationsModule	
   ],
-  providers: [],
+  providers: [MyserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

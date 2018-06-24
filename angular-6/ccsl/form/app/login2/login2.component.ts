@@ -12,6 +12,7 @@ export class Login2Component implements OnInit {
 	m;
 	n;
 	p;
+	reza;
 
   constructor() { }
 
