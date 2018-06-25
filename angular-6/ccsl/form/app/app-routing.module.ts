@@ -8,6 +8,9 @@ import { Login3Component } from './login3/login3.component';
 import { LoginValidComponent } from './login-valid/login-valid.component';
 import { AnimationsexComponent } from './animationsex/animationsex.component';
 import { ServiceDateExComponent } from './service-date-ex/service-date-ex.component';
+import { HtttexampleComponent } from './htttexample/htttexample.component';
+import { MyhttpComponent } from './myhttp/myhttp.component';
+import { SearchhttpComponent } from './searchhttp/searchhttp.component';
 const routes: Routes = [
 {
 	path:'',
@@ -40,6 +43,18 @@ const routes: Routes = [
 {
 	path:'login6',
 	component:ServiceDateExComponent
+},
+{
+	path:'login7',
+	component:HtttexampleComponent
+},
+{
+	path:'login8',
+	component:MyhttpComponent
+},
+{
+	path:'login9',
+	component:SearchhttpComponent
 }
 ];
 @NgModule({

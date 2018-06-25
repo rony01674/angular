@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
@@ -16,7 +16,12 @@ import { AnimationsexComponent } from './animationsex/animationsex.component';
 
 import { MyserviceService } from './myservice.service';
 import { ServiceDateExComponent } from './service-date-ex/service-date-ex.component';
-
+import { HtttexampleComponent } from './htttexample/htttexample.component';
+import { MyhttpserviceService } from './myhttpservice.service';
+import { DataService } from './data.service';
+import { MyhttpComponent } from './myhttp/myhttp.component';
+import { SearchhttpComponent } from './searchhttp/searchhttp.component';
+import { SearchdataService } from './searchdata.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,17 +32,20 @@ import { ServiceDateExComponent } from './service-date-ex/service-date-ex.compon
 	Login3Component,
 	LoginValidComponent,
 	AnimationsexComponent,
-	ServiceDateExComponent
+	ServiceDateExComponent,
+	HtttexampleComponent,
+	MyhttpComponent,
+	SearchhttpComponent
   ],
   imports: [
     BrowserModule,
 	FormsModule,
-	HttpModule,
+	HttpClientModule,
 	ReactiveFormsModule,
     AppRoutingModule,
 	BrowserAnimationsModule	
   ],
-  providers: [MyserviceService],
+  providers: [MyserviceService,MyhttpserviceService,DataService,SearchdataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
