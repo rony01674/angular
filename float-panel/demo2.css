@@ -1,7 +1,7 @@
 ﻿
 /* ---------------- For sticky header: class="float-panel"  ------------------*/
 .float-panel {
-    width:100%;background:white;z-index:300;padding:30px 0;transform: translateZ(0);
+    width:100%;background:white;z-index:300;padding:3px 0;transform: translateZ(0);
     transition:all 0.5s; /* Effect for switching from .fixed to static */
 }
 .float-panel .content-area {margin:10px auto;}
